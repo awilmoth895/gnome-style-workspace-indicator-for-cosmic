@@ -1,4 +1,7 @@
-At the moment it is a gnome style workspace indicator for cosmic, I would love to set it up to be customizable but I don't know if I will get to that. This is a fork of the cosmic numbered workspace indicator. I have never used rust before this so I am just figuring it out so the code is probably not optimal.
+# Gnome Style Workspace Indicator for Cosmic
+At the moment it is just a gnome style workspace indicator. I did this to learn how to customize the indicator. I would love to set it up to be customizable through a config file or a settings page but I don't know if I will get to that. This is a fork of the cosmic numbered workspace indicator. I have never used rust before this and I am just figuring it out so the code is probably not optimal.
+
+## install
 
 To install run\
 `Just`\
@@ -8,3 +11,8 @@ then\
 For somen reason you will then have to copy the binary into the bin folder, I don't know why installing does not do that.\
 `sudo cp target/release/gnome-style-workspace-indicator /usr/local/bin`
 
+## known issues
+- No animation, this I think is an iced/libcosmic limitation at the moment
+- The highlight on hover is not based on the color set from the theme instead it is just a color that is simular at the moment
+- The highlight does not correctly touch the top and bottom of the panel/dock like it does for all other applets
+- Highlight does not cause cursor to turn into pointer unless over the actual indicator dots/dash
